@@ -13,7 +13,7 @@ telegram_token = os.getenv("telegram_token")
 telegram_chat_ids = json.loads(os.getenv("chat_ids"))
 
 # FOOTBALL API DETAILS
-octopus_tracker_api = 'https://octopus.energy/api/v1/tracker/G-1R-SILVER-FLEX-22-11-25-H/daily/current/0/9646/'
+octopus_tracker_api = 'https://octopus.energy/api/v1/tracker/G-1R-SILVER-FLEX-22-11-25-N/daily/current/0/9646/'
 
 # TELEGRAM DETAILS
 telegram_url = "https://api.telegram.org/bot" + telegram_token
