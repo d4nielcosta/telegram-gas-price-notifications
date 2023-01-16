@@ -34,9 +34,9 @@ def parse_data(data):
         Tomorrow's predicted price: {tomorrowGasPrice}
         Standing charge: {standingCharge}
         '''.format(date=today,
-                   todayGasPrice=[entry['unit_rate'] for entry in data['periods'] if entry['date'] == today],
-                   tomorrowGasPrice=[entry['unit_rate'] for entry in data['periods'] if entry['date'] == tomorrow],
-                   standingCharge=[entry['standing_charge'] for entry in data['periods'] if entry['date'] == today])
+                   todayGasPrice=[entry['unit_rate'] for entry in data['periods'] if entry['date'] == today][0],
+                   tomorrowGasPrice=[entry['unit_rate'] for entry in data['periods'] if entry['date'] == tomorrow][0],
+                   standingCharge=[entry['standing_charge'] for entry in data['periods'] if entry['date'] == today][0])
 
 
 def send_notifications(message):
