@@ -3,9 +3,6 @@
 name: Run PM script
 
 on:
-  # Triggers the workflow every day at 6 am UTC
-  schedule:
-    - cron: "0 21 * * *"
   workflow_dispatch:
 
 permissions:
